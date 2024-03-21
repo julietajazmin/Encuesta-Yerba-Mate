@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head> <title>ENCUESTA</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    </head>
+<body>
+  <div class="container">
+    <header class="header">
+<h1 id="title">Encuesta sobre Yerba Mate</h1>
+<p id="description"> Para disfrutar más tus mates completa la encuesta.
+  ¡Muchas gracias!
+</p>
+</header>
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label"for="name"> Nombre <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required></label>
+    </div>
+    <div class="form-group">
+    <label id="email-label" for="email"> Email <input type="email" name="email" id="email" class="form-control"placeholder="Ingresa tu Email" required></label>
+    </div>
+    <div class="form-group">
+    <label id="number-label" for="number"> Edad (opcional) <input type="number" name="number" id="number" min="10" max="99" class="form-control"  placeholder="Edad" value="number"></label>
+    </div>
+    <div class="form-group">
+    <p>¿Cuál marca de Yerba utiliza?</p>
+    <select id="dropdown" name="dropdown" class="form-control" required>
+      <option value="">(Elija una opción)</option>
+      <option value="1">Yerba suave</option>
+      <option value="2">Yerba sin polvo</option> 
+      <option value="3">Mañana acompañada</option>
+    </select>
+    <div class="form-group">
+      <p>¿En qué momento elige tomar un mate?</p>
+      <label><input name="opción" value="mañana" type="radio" class="input-radio" checked> Por la mañana</label>
+      <label><input name="opción" value="tarde" type="radio" class="input-radio" checked> Por la tarde</label>
+      <label><input name="opción" value="noche" type="radio" class="input-radio" checked> Por la noche</label>
+       <label><input name="opción" value="varias" type="radio" class="input-radio" checked> Varias veces al día</label>
+      </div>
+    <div class="form-group">
+      <p> Características de una Yerba de calidad</p>
+      <label><input name="elegir" value="color"  type="checkbox" class="input-checkbox"> Color</label>
+  <label><input name="elegir" value="sabor" type="checkbox" class="input-checkbox"> Sabor</label>
+<label><input name="elegir" value="Sin polvo" type="checkbox" class="input-checkbox"> Sin polvo</label>
+<label><input name="elegir" value="aroma" type="checkbox" class="input-checkbox"> Aroma</label>
+<label><input name="elegir" value="presentación" type="checkbox" class="input-checkbox"> Presentación</label>
+      </div>
+      <div class="form-group">
+        <p> ¡Nos importa mucho su opinión! Puede dejarnos una sugerencia, comentario o unas palabras.</p>
+        <textarea id="comments" class="input-area" name="comment" placeholder="Ingrese su comentario aquí..."></textarea>
+        </div>
+        <div class="form group">
+          <button type="submit" id="submit" class="submit-button"value="Submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </body>
+    </html>
